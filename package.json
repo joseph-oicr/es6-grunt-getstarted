@@ -1,0 +1,16 @@
+{
+    "name" : "SampleGrunt",
+    "version" : "0.1.0",
+    "author" : "Frontend Masters",
+    "private" : true,
+
+    "dependencies": {
+        "systemjs" : "*"
+    },
+    "devDependencies" : {
+        "grunt" :                       "~0.4.0",
+        "grunt-traceur":                "*",
+        "grunt-contrib-watch":          "*",
+        "matchdep":                     "*"
+    }
+}
