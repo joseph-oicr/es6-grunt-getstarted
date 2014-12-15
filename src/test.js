@@ -1,5 +1,7 @@
-var someFunc = function({ name: name }) {
-  console.log(name);
+var someFunc = function({ name: name = "Batman", pet: pet = "Bat" }) {
+  console.log(name, pet);
 }
 
-someFunc({name: 'Boo boo foo'});
+someFunc({name: "Marc", pet: "Cat"});
+
+someFunc({});

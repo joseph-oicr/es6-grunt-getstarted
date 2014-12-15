@@ -4,6 +4,13 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    browserify: {
+      dist: {
+        files: {
+          'build/app.js': ['build/src/*.js'],
+        }
+      }
+    },
     traceur: {
       options: {
         includeRuntime: true,
@@ -39,7 +46,7 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'scripts', 
     'Compiles the JavaScript files.', 
-    [ 'traceur' ]
+    [ 'traceur', 'browserify' ]
   );
 
   grunt.registerTask('default', ['scripts']);

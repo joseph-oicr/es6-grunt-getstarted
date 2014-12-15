@@ -10,6 +10,7 @@
         "grunt" :                       "~0.4.0",
         "grunt-traceur":                "*",
         "grunt-contrib-watch":          "*",
+        "grunt-browserify":             "*",
         "matchdep":                     "*"
     }
 }
