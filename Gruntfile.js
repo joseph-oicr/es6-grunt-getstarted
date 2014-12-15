@@ -6,7 +6,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     traceur: {
       options: {
-        // traceur options here
+        includeRuntime: true,
+        modules: 'commonjs',
+        blockBinding: true,
+        experimental: true
       },
       custom: {
         files: [{
